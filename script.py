@@ -1,4 +1,4 @@
-import wmi
+import wmi,psutil
 
 c = wmi.WMI()
 my_system = c.Win32_ComputerSystem()[0]
@@ -14,3 +14,4 @@ print(f"Domain: {my_system.Domain}")
 print(f"UserName: {my_system.UserName}")
 print(f"Total Physical Memory: {int(my_system.TotalPhysicalMemory)//(1024*1024*1024)} GB")
 print(f"Workgroup: {my_system.Workgroup}")
+print(f"RAM:{str(round(psutil.virtual_memory().total / (1024.0 **3)))} GB")
