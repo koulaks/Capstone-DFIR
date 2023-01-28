@@ -1,0 +1,6 @@
+import pyshark
+
+
+cap = pyshark.FileCapture(r'C:\Users\aksha\OneDrive\Desktop\Tools\testpcpap.pclearcap')
+for pkt in cap:
+    print(pkt(1))
