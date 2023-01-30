@@ -1,4 +1,4 @@
-import wmi,psutil,socket,uuid,re
+import wmi,psutil,socket,uuid,re #pip install wmi , psutil
 
 c = wmi.WMI()
 my_system = c.Win32_ComputerSystem()[0]
