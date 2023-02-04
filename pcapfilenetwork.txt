@@ -1,7 +1,0 @@
-import scapy 
-import sys
-from scapy.all import *
-packets = rdpcap(r'C:\Users\aksha\OneDrive\Desktop\Tools\testpcpap.pcap') 
-for packet in packets:
- if packet.haslayer(TCP):
-  print(packet.summary())
