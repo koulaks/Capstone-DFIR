@@ -6,7 +6,7 @@ for user in conn.Win32_UserAccount():
    print(user) 
 print("\nUser Groups\n")
 for group in conn.Win32_Group():
- print(group.Caption)
+ print(group)
 for user in group.associators(wmi_result_class="Win32_UserAccount"):
- print(" [+]", user.Caption)
+ print(" [+]",group.name, ">", user.Caption)
 
