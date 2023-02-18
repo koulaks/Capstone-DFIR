@@ -1,0 +1,16 @@
+import nmap3
+import os,re
+nmap=nmap3.Nmap()
+os.system('''ipconfig /all | findstr "DHCP" > dhcp.txt''')
+f=open("dhcp.txt","r+")
+g=f.read()
+matches = re.findall("(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)", g)
+print(matches)
+for i in matches:
+    print(f"------------Information about {i}--------------------")
+    s=nmap.nmap_os_detection(i)
+    for k in s:
+        print(f"{k}\n")
+
+
+
