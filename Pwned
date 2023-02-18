@@ -1,0 +1,8 @@
+import pwnedpasswords
+p=input("Enter the password being used for the organization: ")
+check=pwnedpasswords.check(p)
+
+if(check>0):
+    print("You have been Pwned !! Change password")
+else:
+    print("You havent been Pwned yet")
