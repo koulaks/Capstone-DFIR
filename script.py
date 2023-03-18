@@ -156,7 +156,7 @@ def External_devices():
 
          for usb_device in usb_devices:
              device = usb_device.Dependent
-             print(f"{device.Caption} connected at {datetime.datetime.now()}")
+             print(f"{device.Caption} connected at {datetime.now()}")
 
 
 def Additional():
