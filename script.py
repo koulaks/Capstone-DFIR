@@ -151,7 +151,12 @@ def Account_Details():
     #Login time of user , User password info , Reset Date
 
 def External_devices():
-    print("In Progress")
+         c = wmi.WMI()
+         usb_devices = c.Win32_USBControllerDevice()
+
+         for usb_device in usb_devices:
+             device = usb_device.Dependent
+             print(f"{device.Caption} connected at {datetime.datetime.now()}")
 
 
 def Additional():
