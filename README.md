@@ -113,7 +113,7 @@ Below is a brief overview of key files and their purposes:
 - `Incidence Response Playbook- system intrusion(Malware).pdf`: Playbook for malware system intrusions.
 - `Policy Violation.pdf`: Playbook for policy violations.
 
-### Linux/
+### Linux
 - `openports.sh`: Script to list open ports.
 - `files.py`: Python script to handle file-related tasks.
 - `test2.sh`: Test script.
