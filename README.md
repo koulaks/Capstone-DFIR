@@ -16,8 +16,8 @@ This project is designed to showcase various aspects of Digital Forensics and In
 The repository is organized as follows:
 
 ```
-Capstone-DFIR/
-├── IR Playbooks/
+Capstone-DFIR
+├── IR Playbooks
 │   ├── Incidence response playbook- identity based attack.pdf
 │   ├── Incident Response Playbook - Phishing Spoofing.pdf
 │   ├── Incidence Response playbook- Insider Threat.pdf
@@ -29,7 +29,7 @@ Capstone-DFIR/
 │   ├── Data Theft.pdf
 │   ├── Incidence Response Playbook- system intrusion(Malware).pdf
 │   └── Policy Violation.pdf
-├── Linux/
+├── Linux
 │   ├── openports.sh
 │   ├── files.py
 │   ├── test2.sh
@@ -54,10 +54,10 @@ Capstone-DFIR/
 └── README.md
 ```
 
-### IR Playbooks/
+### IR Playbooks
 Contains various incident response playbooks for different types of cybersecurity incidents.
 
-### Linux/
+### Linux
 Houses scripts and tools for Linux-based forensic and incident response tasks.
 
 ### MacOS_Documentation.pdf
@@ -100,7 +100,7 @@ python scripts/analysis_script.py
 ## Files Overview
 Below is a brief overview of key files and their purposes:
 
-### IR Playbooks/
+### IR Playbooks
 - `Incidence response playbook- identity based attack.pdf`: Playbook for identity-based attacks.
 - `Incident Response Playbook - Phishing Spoofing.pdf`: Playbook for phishing and spoofing attacks.
 - `Incidence Response playbook- Insider Threat.pdf`: Playbook for insider threat incidents.
